@@ -1,0 +1,18 @@
+{
+  "profiles": {
+    "SubbyApi": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7296",
+      "launchBrowser": false,
+      "environmentVariables": {
+        "SUBBY_MYSQL_CONN_STR": "Server=localhost; Port=3307; Uid=root; Pwd=secret; database=usubindb;",
+        "Categories": "all,tv,combined,music,video-games",
+
+        "CosmosDbSettings:PartitionKeyPath": "/id",
+        "CosmosDbSettings:ContainerId": "Subscriptions",
+        "CosmosDbSettings:AccountEndpoint": "AccountEndpoint=https://localhost:8081/;AccountKey=C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==",
+        "CosmosDbSettings:DatabaseId": "subbydb"
+      }
+    }
+  }
+}
